@@ -12,6 +12,11 @@ export const NavBar = ({ user, handleLogin }) => {
     handleLogin(null)
   }
 
+  let userImage = null;
+  if (user !== null) {
+    userImage = require(`../imgs/navIcons/${user.image}.png`).default;
+  }
+
   return (
     <nav>
       <div>
@@ -34,7 +39,7 @@ export const NavBar = ({ user, handleLogin }) => {
         ) : (
           <Link to='/' onClick={logout}>
             <h4>{user.username}</h4>
-            <img src={login} alt='Error al cargar la imagen' />
+            <img src={userImage} alt='Error al cargar la imagen' />
           </Link>
         )}
       </div>

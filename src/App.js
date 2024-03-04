@@ -12,8 +12,9 @@ function App() {
 
   const users = [
     {
-      username: 'RoyalAcademyLZ',
-      password: 'adminLZweb'
+      username: 'RoyalAcademy',
+      password: '1234',
+      image: 'royal'
     }
   ]
 
