@@ -1,0 +1,11 @@
+.inicio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.inicio-container h1 {
+    margin: 20px;
+    width: fit-content;
+}
