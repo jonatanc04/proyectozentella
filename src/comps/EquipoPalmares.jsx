@@ -18,14 +18,18 @@ export const EquipoPalmares = ({ equipo }) => {
   return (
     <div className="equipo-palmares-cont">
       <div>
-        <img src={escudo} alt="Error" />
+        {equipo.image === 'japon' ? (
+          <img className='long' src={escudo} alt="Error" />
+        ) : (
+          <img src={escudo} alt="Error" />
+        )}
       </div>
       <div>
         <h1>{equipo.equipo}</h1>
-        <h3>Presidente: {equipo.presidente}</h3>
+        <h4>Presidente: {equipo.presidente}</h4>
         {equipo.titulos.map((logro, index) => (
-            <h5 key={index}>{logro}</h5>
-          ))}
+          <h3 key={index}>{logro}</h3>
+        ))}
       </div>
     </div>
   );
