@@ -18,7 +18,7 @@ import neo from "../imgs/teamIcons/neo.png";
 import ogre from "../imgs/teamIcons/ogre.png";
 import orfeo from "../imgs/teamIcons/orfeo.png";
 import protocolo from "../imgs/teamIcons/protocolo.png";
-import resis from "../imgs/teamIcons/resis.png";
+import marytencia from "../imgs/teamIcons/marytencia.png";
 import redux from "../imgs/teamIcons/redux.png";
 import geminis from "../imgs/teamIcons/geminis.png";
 
@@ -42,7 +42,7 @@ export const Footer = () => {
       <img src={ogre} alt="Error" />
       <img src={orfeo} alt="Error" />
       <img src={protocolo} alt="Error" />
-      <img src={resis} alt="Error" />
+      <img src={marytencia} alt="Error" />
       <img src={royal} alt="Error" />
       <img src={redux} alt="Error" />
       <img src={geminis} alt="Error" />

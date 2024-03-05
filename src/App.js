@@ -80,7 +80,7 @@ function App() {
       id: 9,
       name: 'Resis Time',
       group: 1,
-      image: 'resis'
+      image: 'marytencia'
     },
     {
       id: 10,
