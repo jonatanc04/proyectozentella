@@ -1,0 +1,25 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+
+    position: fixed;
+    bottom: 0;
+    margin-top: 20px;
+    
+    background-color: rgb(228, 156, 23);
+    box-shadow: 0px 0px 10px gold;
+}
+
+footer img {
+    width: 40px;
+    margin: 10px;
+}
+
+footer .long {
+    width: 35px;
+    margin: 10px;
+}

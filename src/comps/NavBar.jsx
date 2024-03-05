@@ -1,21 +1,33 @@
-import React from 'react'
-import '../styles/NavBar.css'
-import logo from '../imgs/logo.png'
-import inicio from '../imgs/navIcons/destello.png'
-import equipos from '../imgs/navIcons/equipos.png'
-import login from '../imgs/navIcons/usuario.png'
-import { Link } from 'react-router-dom'
+import React, { useState, useEffect } from 'react';
+import '../styles/NavBar.css';
+import logo from '../imgs/logo.png';
+import inicio from '../imgs/navIcons/destello.png';
+import equipos from '../imgs/navIcons/equipos.png';
+import login from '../imgs/navIcons/usuario.png';
+import trofeo from '../imgs/navIcons/trophy.png';
+import { Link } from 'react-router-dom';
 
 export const NavBar = ({ user, handleLogin }) => {
-
   const logout = () => {
-    handleLogin(null)
-  }
+    handleLogin(null);
+  };
 
-  let userImage = null;
-  if (user !== null) {
-    userImage = require(`../imgs/navIcons/${user.image}.png`).default;
-  }
+  const [userImage, setUserImage] = useState(null);
+
+  useEffect(() => {
+    const fetchUserImage = async () => {
+      if (user !== null) {
+        try {
+          const image = await import(`../imgs/teamIcons/${user.image}.png`);
+          setUserImage(image.default);
+        } catch (error) {
+          console.error('Error al cargar la imagen:', error);
+        }
+      }
+    };
+
+    fetchUserImage();
+  }, [user]);
 
   return (
     <nav>
@@ -31,6 +43,10 @@ export const NavBar = ({ user, handleLogin }) => {
           <h4>Equipos</h4>
           <img src={equipos} alt='Error al cargar la imagen' />
         </Link>
+        <Link to='/palmares'>
+          <h4>Palmarés</h4>
+          <img src={trofeo} alt='Error al cargar la imagen' />
+        </Link>
         {user === null ? (
           <Link to='/acceder'>
             <h4>Acceder</h4>
@@ -38,11 +54,11 @@ export const NavBar = ({ user, handleLogin }) => {
           </Link>
         ) : (
           <Link to='/' onClick={logout}>
-            <h4>{user.username}</h4>
-            <img src={userImage} alt='Error al cargar la imagen' />
+            <h4>{user.teamname}</h4>
+            {userImage && <img src={userImage} alt='Error al cargar la imagen' />}
           </Link>
         )}
       </div>
     </nav>
-  )
-}
+  );
+};

@@ -4,7 +4,9 @@ import { NavBar } from './comps/NavBar'
 import { Inicio } from './pages/Inicio'
 import { Equipos } from './pages/Equipos'
 import { Login } from './pages/Login'
+import { Palmares } from './pages/Palmares'
 import { useState } from 'react'
+import { Footer } from './comps/Footer'
 
 function App() {
 
@@ -12,9 +14,16 @@ function App() {
 
   const users = [
     {
-      username: 'RoyalAcademy',
+      username: 'jonatan',
       password: '1234',
+      teamname: 'Royal Academy',
       image: 'royal'
+    },
+    {
+      username: 'balmy',
+      password: '1234',
+      teamname: 'Instituto Zeus',
+      image: 'zeus'
     }
   ]
 
@@ -29,8 +38,10 @@ function App() {
         <Routes>
           <Route path='/' element={<Inicio />} />
           <Route path='/equipos' element={<Equipos />} />
+          <Route path='/palmares' element={<Palmares />} />
           <Route path='/acceder' element={<Login users={users} handleLogin={handleLogin} />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );
