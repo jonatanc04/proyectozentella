@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/jonatanc04/proyectozentella/static/css/main.8400432a.css",
+    "main.js": "/jonatanc04/proyectozentella/static/js/main.db9a211c.js",
+    "static/js/462.ebccb0a5.chunk.js": "/jonatanc04/proyectozentella/static/js/462.ebccb0a5.chunk.js",
+    "static/js/65.4daba0a8.chunk.js": "/jonatanc04/proyectozentella/static/js/65.4daba0a8.chunk.js",
+    "static/js/254.f9fbbc3d.chunk.js": "/jonatanc04/proyectozentella/static/js/254.f9fbbc3d.chunk.js",
+    "static/media/logo.png": "/jonatanc04/proyectozentella/static/media/logo.c54adaa0ed7625fb0ec2.png",
+    "static/media/backform.jpg": "/jonatanc04/proyectozentella/static/media/backform.c463d1272f1908ccad68.jpg",
+    "static/media/royal.png": "/jonatanc04/proyectozentella/static/media/royal.de19004254b891523282.png",
+    "static/media/marytencia.png": "/jonatanc04/proyectozentella/static/media/marytencia.816819e5faf69284d047.png",
+    "static/media/ogre.png": "/jonatanc04/proyectozentella/static/media/ogre.4bdaed949edd04045a12.png",
+    "static/media/farm.png": "/jonatanc04/proyectozentella/static/media/farm.4a8c648d5652bdc937fa.png",
+    "static/media/shuriken.png": "/jonatanc04/proyectozentella/static/media/shuriken.b1043cdccf17398d62ab.png",
+    "static/media/universal.png": "/jonatanc04/proyectozentella/static/media/universal.67895e0154c17a80e677.png",
+    "static/media/kidsgo.png": "/jonatanc04/proyectozentella/static/media/kidsgo.cbf9abbc702ef3a0c49a.png",
+    "static/media/equipos.png": "/jonatanc04/proyectozentella/static/media/equipos.d31e0b4fe55519036986.png",
+    "static/media/trophy.png": "/jonatanc04/proyectozentella/static/media/trophy.306b6aa5b2c470ddeff8.png",
+    "static/media/alpino.png": "/jonatanc04/proyectozentella/static/media/alpino.676d048fa03f2dca7378.png",
+    "index.html": "/jonatanc04/proyectozentella/index.html",
+    "main.8400432a.css.map": "/jonatanc04/proyectozentella/static/css/main.8400432a.css.map",
+    "main.db9a211c.js.map": "/jonatanc04/proyectozentella/static/js/main.db9a211c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8400432a.css",
+    "static/js/main.db9a211c.js"
+  ]
+}

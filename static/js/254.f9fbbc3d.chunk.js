@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkproyectozentella=self.webpackChunkproyectozentella||[]).push([[254],{254:(e,c,t)=>{e.exports=t.p+"static/media/shuriken.b1043cdccf17398d62ab.png"}}]);
