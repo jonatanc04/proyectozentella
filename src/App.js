@@ -7,6 +7,7 @@ import { Login } from './pages/Login'
 import { Palmares } from './pages/Palmares'
 import { useState } from 'react'
 import { Footer } from './comps/Footer'
+import { Clasificacion } from './pages/Clasificacion'
 
 function App() {
 
@@ -173,6 +174,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Inicio />} />
           <Route path='/equipos' element={<Equipos equipos={equipos} />} />
+          <Route path='/clasificacion' element={<Clasificacion equipos={equipos} />} />
           <Route path='/palmares' element={<Palmares />} />
           <Route path='/acceder' element={<Login users={users} handleLogin={handleLogin} />} />
         </Routes>

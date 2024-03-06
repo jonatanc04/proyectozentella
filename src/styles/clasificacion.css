@@ -1,0 +1,47 @@
+.clasi-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.clasi-container h1 {
+    margin: 20px;
+    width: fit-content;
+}
+
+.clasi-container main {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    height: 580px;
+}
+
+.clasi-container main div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 50%;
+    height: 100%;
+}
+
+.clasi-container main div div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+.clasi-container main div h2 {
+    color: black;
+    margin: 15px;
+    width: 80%;
+    text-align: center;
+    border-radius: 50px;
+    background-color: rgb(228, 156, 23);
+}
