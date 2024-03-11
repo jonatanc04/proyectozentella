@@ -17,14 +17,12 @@ function App() {
     {
       username: 'jonatan',
       password: '1234',
-      teamname: 'Royal Academy',
-      image: 'royal'
+      id_equipo: 10
     },
     {
       username: 'balmy',
       password: '1234',
-      teamname: 'Instituto Zeus',
-      image: 'zeus'
+      id_equipo: 22
     }
   ]
 
@@ -176,7 +174,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <NavBar user={user} handleLogin={handleLogin} />
+        <NavBar user={user} handleLogin={handleLogin} equipos={equipos} />
         <Routes>
           <Route path='/' element={<Inicio />} />
           <Route path='/equipos' element={<Equipos equipos={equipos} />} />
