@@ -5,6 +5,7 @@ import inicio from '../imgs/navIcons/destello.png';
 import equipos from '../imgs/navIcons/equipos.png';
 import login from '../imgs/navIcons/usuario.png';
 import trofeo from '../imgs/navIcons/trophy.png';
+import clasi from '../imgs/navIcons/clasificacion.png';
 import { Link } from 'react-router-dom';
 
 export const NavBar = ({ user, handleLogin }) => {
@@ -42,6 +43,10 @@ export const NavBar = ({ user, handleLogin }) => {
         <Link to='/equipos'>
           <h4>Equipos</h4>
           <img src={equipos} alt='Error al cargar la imagen' />
+        </Link>
+        <Link to='/clasificacion'>
+          <h4>Clasificación</h4>
+          <img src={clasi} alt='Error al cargar la imagen' />
         </Link>
         <Link to='/palmares'>
           <h4>Palmarés</h4>
