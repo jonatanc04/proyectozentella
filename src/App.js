@@ -160,6 +160,12 @@ function App() {
       name: 'Instituto Zeus',
       group: 2,
       image: 'zeus'
+    },
+    {
+      id: 23,
+      name: 'Academia Mar de Luna',
+      group: 2,
+      image: 'marluna'
     }
   ]
 
@@ -178,7 +184,7 @@ function App() {
           <Route path='/palmares' element={<Palmares />} />
           <Route path='/acceder' element={<Login users={users} handleLogin={handleLogin} />} />
         </Routes>
-        <Footer />
+        <Footer equipos={equipos} />
       </div>
     </Router>
   );
